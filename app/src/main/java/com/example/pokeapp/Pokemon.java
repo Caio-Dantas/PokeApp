@@ -24,8 +24,10 @@ public class Pokemon {
             String sprites = jsonObject.getString("sprites");
             JSONObject jsonSprites = new JSONObject(sprites);
 
-            this.height = jsonObject.getString("height");
-            this.weight = jsonObject.getString("weight");
+            String decimetersHeight = jsonObject.getString("height");
+            this.height = String.valueOf(Double.parseDouble(decimetersHeight) * 10);
+            String hectogramWeight = jsonObject.getString("weight");
+            this.weight = String.valueOf(Double.parseDouble(hectogramWeight) / 10);
             this.baseXP = jsonObject.getString("base_experience");
             this.name = jsonObject.getString("name");
             this.sprite = loadImageFromUrl(jsonSprites.getString("front_default"));

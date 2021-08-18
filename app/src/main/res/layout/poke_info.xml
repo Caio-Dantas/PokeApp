@@ -186,12 +186,12 @@
             app:layout_constraintVertical_bias="0.117" />
 
         <TextView
-            android:id="@+id/txtKg"
+            android:id="@+id/txtCm"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:fontFamily="sans-serif-medium"
-            android:text="kg"
+            android:text="cm"
             android:textColor="#353B3E"
             android:textFontWeight="500"
             android:textSize="18sp"
@@ -203,11 +203,11 @@
             app:layout_constraintVertical_bias="0.021" />
 
         <TextView
-            android:id="@+id/txtCm"
+            android:id="@+id/txtKg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-medium"
-            android:text="cm"
+            android:text="Kg"
             android:textColor="#353B3E"
             android:textFontWeight="500"
             android:textSize="18sp"
@@ -215,7 +215,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.03"
             app:layout_constraintStart_toEndOf="@+id/txtWeight"
-            app:layout_constraintTop_toBottomOf="@+id/txtKg"
+            app:layout_constraintTop_toBottomOf="@+id/txtCm"
             app:layout_constraintVertical_bias="0.115" />
 
         <TextView
@@ -231,7 +231,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.035"
             app:layout_constraintStart_toEndOf="@+id/txtXp"
-            app:layout_constraintTop_toBottomOf="@+id/txtCm"
+            app:layout_constraintTop_toBottomOf="@+id/txtKg"
             app:layout_constraintVertical_bias="0.115" />
 
 
